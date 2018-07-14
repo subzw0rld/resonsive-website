@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero {
+    background: url('../images/emptiness.jpg') no-repeat;
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: $max-wrapper-width;
+    padding: 1rem;
+    margin: 0 auto;
+}
