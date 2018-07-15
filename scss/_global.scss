@@ -1,13 +1,60 @@
+html {
+    font-size: 62.5%;
+}
+
 body {
+    background: #f2f2f2;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    color: #5E5853;
+    text-align: justify;
+
+    &:focus {
+        outline: 1px solid rgba(255, 255, 255, 0.6);
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Coda Caption', sans-serif;
+}
+
+h1 {
+    font-size: 4.2rem;
+}
+
+section, div, p, span, input {
+    font-size: 1.2rem;
 }
 
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.horizontal-center {
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.banner {
+    color: #FFF;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, 550%);
+    transition: transform 0.8s cubic-bezier(0, 0.51, 0.17, 1);
+    
+    &-appear {
+        transform: translate(-50%, -50%);
+    }
 }
 
 .row {
@@ -20,6 +67,12 @@ ul {
     background-size: cover;
     background-position: center; 
     height: 100vh;
+}
+
+.page {
+    -webkit-box-shadow: 0px -2px 11px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px -2px 11px 0px rgba(0,0,0,0.45);
+    box-shadow: 0px -2px 11px 0px rgba(0,0,0,0.45);
 }
 
 .wrapper {
