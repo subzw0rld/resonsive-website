@@ -4,6 +4,8 @@
   "description": "responsive layout using custom flex based grid",
   "main": "index.js",
   "scripts": {
+    "gulp": "gulp",
+    "connect": "gulp connect",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Subroto",

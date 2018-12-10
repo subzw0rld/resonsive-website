@@ -1,6 +1,9 @@
-@import 'variables.scss';
+@import 'fontawesome/variables.scss';
+@import 'variables';
 @import 'global';
 @import 'responsive/grid';
-@import 'fontawesome';
-@import 'fa-solid';
+@import 'fontawesome/fontawesome';
+@import 'fontawesome/fa-solid';
+@import 'fontawesome/fa-brands';
 @import 'navigation/nav';
+@import 'footer/footer';

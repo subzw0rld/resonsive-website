@@ -7,9 +7,7 @@ body {
   font-family: 'Open Sans', sans-serif; }
 
 * {
-  box-sizing: border-box;
-  color: #5E5853;
-  text-align: justify; }
+  box-sizing: border-box; }
   *:focus {
     outline: 1px solid rgba(255, 255, 255, 0.6); }
 
@@ -19,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 4.2rem; }
 
-section, div, p, span, input {
+section, div, p, span, input, footer {
   font-size: 1.2rem; }
 
 ul {
@@ -29,6 +27,9 @@ ul {
 
 .horizontal-center {
   justify-content: center; }
+
+.text-justify {
+  text-align: justify; }
 
 .title {
   text-align: center; }
@@ -43,7 +44,7 @@ ul {
   .banner-appear {
     transform: translate(-50%, -50%); }
 
-.row, .nav-container {
+.row, .nav-container, footer {
   display: flex;
   flex-wrap: wrap; }
 
@@ -56,7 +57,8 @@ ul {
 .page {
   -webkit-box-shadow: 0px -2px 11px 0px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 0px -2px 11px 0px rgba(0, 0, 0, 0.45);
-  box-shadow: 0px -2px 11px 0px rgba(0, 0, 0, 0.45); }
+  box-shadow: 0px -2px 11px 0px rgba(0, 0, 0, 0.45);
+  padding-bottom: 1.5rem; }
 
 .wrapper {
   width: 100%;
@@ -3669,6 +3671,16 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../webfonts/fa-brands-400.eot");
+  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+
+.fab {
+  font-family: 'Font Awesome 5 Brands'; }
+
 .navigation {
   box-shadow: 0px 6px 8px -2px rgba(32, 32, 32, 0.25);
   height: 50px;
@@ -3680,15 +3692,16 @@ readers do not read off random characters that represent icons */
   .nav-container a {
     color: #FFF;
     display: block;
-    font-size: 1.4rem;
     padding: 1.6rem 0;
     text-decoration: none;
     text-align: center; }
-    .nav-container a:hover {
-      background: rgba(204, 204, 204, 0.3); }
     .nav-container a i {
       color: #FFF; }
+  .nav-container .nav-label {
+    margin-left: 0.3rem;
+    font-size: 1.4rem; }
   .nav-container li.active {
+    background: rgba(204, 204, 204, 0.3);
     position: relative; }
   .nav-container li.active::before {
     border-bottom: 2px solid #FFF;
@@ -3712,3 +3725,33 @@ readers do not read off random characters that represent icons */
     transform: scale(0, 0); }
   100% {
     transform: scale(1, 1); } }
+
+footer {
+  background: #000;
+  color: #FFF;
+  min-height: 40px;
+  padding: 2rem 0; }
+  footer a {
+    color: inherit;
+    text-decoration: none; }
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  footer p {
+    margin: 0; }
+
+.footer-list {
+  border-right: 1px dotted #FFF; }
+  .footer-list:nth-child(2) {
+    padding-left: 0.5rem; }
+  .footer-list:last-child {
+    border-right: none;
+    padding-left: 0.5rem; }
+
+.footer-item {
+  background-color: rgba(204, 204, 204, 0.3);
+  border-radius: 2px;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.6rem; }

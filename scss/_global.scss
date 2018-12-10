@@ -9,10 +9,7 @@ body {
 }
 
 * {
-    box-sizing: border-box;
-    color: #5E5853;
-    text-align: justify;
-
+    box-sizing: border-box; 
     &:focus {
         outline: 1px solid rgba(255, 255, 255, 0.6);
     }
@@ -26,7 +23,7 @@ h1 {
     font-size: 4.2rem;
 }
 
-section, div, p, span, input {
+section, div, p, span, input, footer {
     font-size: 1.2rem;
 }
 
@@ -38,6 +35,10 @@ ul {
 
 .horizontal-center {
     justify-content: center;
+}
+
+.text-justify {
+    text-align: justify;
 }
 
 .title {
@@ -73,6 +74,7 @@ ul {
     -webkit-box-shadow: 0px -2px 11px 0px rgba(0,0,0,0.45);
     -moz-box-shadow: 0px -2px 11px 0px rgba(0,0,0,0.45);
     box-shadow: 0px -2px 11px 0px rgba(0,0,0,0.45);
+    padding-bottom: 1.5rem;
 }
 
 .wrapper {
