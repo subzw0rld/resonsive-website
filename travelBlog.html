@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome to Subzworld</title>
+    <title>Welcome to Subzworld - My Travel Blog</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/travelblog.css">
 </head>
 
 <body>
-    <section class="hero">
-        <nav class="navigation">
+    <section>
+        <nav class="blog navigation">
             <ul class="nav-container">
-                <li class="col-3 active">
+                <li class="col-3">
                     <a href="/">
                         <i class="fas fa-home" aria-hidden="true"></i>
                         <span class="nav-label">Home</span>
@@ -33,7 +35,7 @@
                         <span class="nav-label">Contact</span>
                     </a>
                 </li>
-                <li class="col-3">
+                <li class="col-3 active">
                     <a href="#" class="blog-menu">
                         <i class="fa fa-book" aria-hidden="true"></i>
                         <span class="nav-label">Blog</span>
@@ -49,43 +51,55 @@
                 </li>
             </ul>
         </nav>
-        <h1 class="banner">Building Bridges</h1>
+        <!-- <h1 class="banner">Building Bridges</h1> -->
     </section>
-    <section class="row horizontal-center page">
+    <section class="travel-blog row horizontal-center">
         <div class="col-10">
-            <h1 class="title">Hello World!</h1>
-            <section class="row horizontal-center">
-                <article class="col-8 text-justify">
-                    <p>
-                        Welcome to SubzWorld! This space is my effort to create a spot for me in this digital realm.
-                        Using this medium I want to enable people to know who I am and what I do and being a techie I
-                        want to use this medium to share all my learnings and my findings with the techies like me.
-                    </p>
-                    <p>
-                        Besides a techie I am also an avid traveller and while travelling I have the habit of penning
-                        down my thoughts, which is lost in papers with time. Therefore using this space I have made an
-                        effort to share my experiences and travel tips with other travel junkies.
-                    </p>
-                    <p>
-                        While you are here please feel free to checkout the blog section. I have categorized my blogs
-                        according to my travel sagas and my foodie experience, I would keep on updating my blogs as
-                        regularly as possible.
-                    </p>
-                    <p>
-                        I hope you enjoy your stay, Oh! while you’re here, please do leave your comment and feedback as
-                        it
-                        will be really valuable learning information.
-                    </p>
-                </article>
-            </section>
+            <h1 class="title">My Travelogs</h1>
+            <div class="row horizontal-center">
+                <div class="col-8 travel-grid">
+                    <div class="row">
+                        <div class="col-12 post-card">
+                            <div class="row post-card-body vertical-center">
+                                <div class="spiti direction-horizontal col-5">
+
+                                </div>
+                                <div class="postcard-info col-7">
+                                    <p class="post-card-message">
+                                        Spiti - Desert in the sky
+                                    </p>
+                                    <p class="post-card-message">
+                                        When: September 2016
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 post-card">
+                            <div class="row post-card-body vertical-center">
+                                <div class="arunachal direction-vertical col-5">
+
+                                </div>
+                                <div class="postcard-info col-7">
+                                    <p class="post-card-message">
+                                        Arunachal - A Hidden Gem
+                                    </p>
+                                    <p class="post-card-message">
+                                        When: March 2016
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <footer class="row horizontal-center">
-        <section class="col-10">
+        <section class="col-10 col-sm-12">
             <div class="row horizontal-center">
-                <div class="col-8">
+                <div class="col-8 col-sm-12">
                     <ul class="row">
-                        <li class="col-4 footer-list">
+                        <li class="col-4 col-sm-12 footer-list">
                             <p class="title">
                                 Reach Me At
                             </p>
@@ -114,7 +128,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="col-4 footer-list">
+                        <li class="col-4 col-sm-12 footer-list">
                             <p class="title">
                                 Published Articles
                             </p>
@@ -148,7 +162,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="col-4 footer-list">
+                        <li class="col-4 col-sm-12 footer-list">
                             <p class="footer-item">
                                 &copy; 2018 Subzworld All rights reserved.
                             </p>
@@ -159,6 +173,7 @@
         </section>
     </footer>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/travelblog.js"></script>
 </body>
 
 </html>

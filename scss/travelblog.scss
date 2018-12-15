@@ -1,0 +1,83 @@
+.travel-blog {
+    display: flex;
+
+    @media screen and (min-width: 640px){
+        padding-bottom: 10rem;
+    }
+}
+
+.travel-grid {
+    // display: grid;
+    // grid-template-columns: 20% 20% 20% 20% 20%;
+    // grid-template-rows: 20% 20% 20% 20% 20%;
+    
+    min-height: 70vh;
+}
+
+.post-card {
+    background: #FFF;
+    border: thin solid rgba(204,204,204, 0.7);
+    margin-top: 20px;
+    position: relative;
+
+    &::before, &::after {
+        z-index: -1;
+        position: absolute;
+        content: '';
+        bottom: 1em;
+        width: 50%;
+        top: 80%;
+        background: #555;
+        box-shadow: 0 1em 0.5em rgba(85,85,85, 0.3);
+    }
+
+    &::before {
+        transform: rotate(-3deg);
+        left: 0.5em;
+    }
+
+    &::after {
+        transform: rotate(3deg);
+        right: 0.5em;
+    }
+}
+
+.post-card-body {
+    height: 350px;
+}
+
+.post-card-message {
+    border-bottom: 2px solid #000;
+    font-family: 'Satisfy', cursive;
+    font-size: 2.5rem;
+    padding-bottom: 0.3rem;
+    margin: 1rem 1.7rem;
+    text-align: center;
+}
+
+.direction-horizontal {
+    transition: background-position-x 1000ms ease-out;
+}
+
+.direction-vertical {
+    transition: background-position-y 1000ms ease-out;
+}
+
+.direction-vertical {
+    height: 200px;
+}
+
+.direction-horizontal {
+    height: 350px;
+}
+
+
+.spiti {
+    background: url(../images/spiti.jpg) no-repeat;
+    background-size: cover;
+}
+
+.arunachal {
+    background: url(../images/arunachal.jpg) no-repeat;
+    background-size: cover;
+}

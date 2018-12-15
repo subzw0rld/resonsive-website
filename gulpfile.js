@@ -5,7 +5,7 @@ var batch = require('gulp-batch');
 var connect = require('gulp-connect');
 
 gulp.task('sass', function() {
-    return gulp.src('./scss/main.scss')
+    return gulp.src('./scss/*.scss')
     .pipe(sass().on('error', sass.logError))
    .pipe(gulp.dest('./assets/css/'));
 });

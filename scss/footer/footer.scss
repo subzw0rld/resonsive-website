@@ -3,11 +3,12 @@ footer {
     @extend .row;
     background: #000;
     color: #FFF;
-    min-height: 40px;
+    // min-height: 40px;
     padding: 2rem 0;
 
     a {
         color: inherit;
+        display: block;
         text-decoration: none;
     }
 
@@ -23,8 +24,7 @@ footer {
 }
 
 .footer-list {
-    border-right: 1px dotted #FFF;
-
+    
     &:nth-child(2) {
         padding-left: 0.5rem;
     }
@@ -32,6 +32,17 @@ footer {
     &:last-child {
         border-right: none;
         padding-left: 0.5rem;
+    }
+
+    .title {
+        @media screen and (max-width: 480px) {
+            margin: 0.8rem 0;
+        }
+        
+    }
+
+    @media screen and (min-width: 480px) {
+        border-right: 1px dotted #FFF;
     }
 }
 

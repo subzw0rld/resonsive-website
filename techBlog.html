@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome to Subzworld</title>
+    <title>Welcome to Subzworld - My Tech Blog</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/techblog.css">
 </head>
 
 <body>
-    <section class="hero">
-        <nav class="navigation">
+    <canvas id="bgCanvas"></canvas>
+    <section>
+        <nav class="blog navigation">
             <ul class="nav-container">
-                <li class="col-3 active">
+                <li class="col-3">
                     <a href="/">
                         <i class="fas fa-home" aria-hidden="true"></i>
                         <span class="nav-label">Home</span>
@@ -33,7 +35,7 @@
                         <span class="nav-label">Contact</span>
                     </a>
                 </li>
-                <li class="col-3">
+                <li class="col-3 active">
                     <a href="#" class="blog-menu">
                         <i class="fa fa-book" aria-hidden="true"></i>
                         <span class="nav-label">Blog</span>
@@ -49,43 +51,121 @@
                 </li>
             </ul>
         </nav>
-        <h1 class="banner">Building Bridges</h1>
+        <!-- <h1 class="banner">Building Bridges</h1> -->
     </section>
-    <section class="row horizontal-center page">
-        <div class="col-10">
-            <h1 class="title">Hello World!</h1>
-            <section class="row horizontal-center">
-                <article class="col-8 text-justify">
-                    <p>
-                        Welcome to SubzWorld! This space is my effort to create a spot for me in this digital realm.
-                        Using this medium I want to enable people to know who I am and what I do and being a techie I
-                        want to use this medium to share all my learnings and my findings with the techies like me.
-                    </p>
-                    <p>
-                        Besides a techie I am also an avid traveller and while travelling I have the habit of penning
-                        down my thoughts, which is lost in papers with time. Therefore using this space I have made an
-                        effort to share my experiences and travel tips with other travel junkies.
-                    </p>
-                    <p>
-                        While you are here please feel free to checkout the blog section. I have categorized my blogs
-                        according to my travel sagas and my foodie experience, I would keep on updating my blogs as
-                        regularly as possible.
-                    </p>
-                    <p>
-                        I hope you enjoy your stay, Oh! while you’re here, please do leave your comment and feedback as
-                        it
-                        will be really valuable learning information.
-                    </p>
-                </article>
-            </section>
+    <section class="tech-blog">
+        <div class="tech-grid">
+            <h1 class="blog-page-title">Welcome to the Tech Blog</h1>
+            <h1 class="blog-author">of Subroto Mukherjee</h1>
+            <p class="author-message">
+                This section is dedicated to all the blogs related to technology I have been seeking. It is a
+                collection of
+                of articles that I have written on some piece of code written by me or about an article that I have
+                found
+                interesting. Like I have already mentioned that this website is also an effort to incorporate anything
+                that
+                catches my interest or would help me learn and showcase my talent. That's why almost every page on this
+                site
+                would look different so that it looks more like a techie's playground than just a website.
+            </p>
+            <div class="blog-topic-misc">
+                <h3>Misc</h3>
+                <ul class="blog-list">
+                    <li>
+                        <a href="http://">
+                            Think Simple and Make it Big
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://">
+                            Harness the power of UI for Data Visualization
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="blog-topic-angular">
+                <h3>Angular</h3>
+                <ul class="blog-list">
+                    <li>
+                        <a href="http://">
+                            Angular 7 Datagrid
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://">
+                            Data Caching in Angular
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://">
+                            Angular Universal
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://">
+                            Angular Best Practices - Lessons learned
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="blog-topic-data-viz">
+                <h3>Data Visualization</h3>
+                <ul class="blog-list">
+                    <li>
+                        <a href="http://">
+                            Canvas - Particle System
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://">
+                            Canvas - Collision Detection
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://">
+                            Canvas - Testing Gravity
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://">
+                            Canvas - Chart
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://">
+                            Using 3D capabilities of CSS to create real world components
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="blog-topic-react">
+                <h3>React</h3>
+                <ul class="blog-list">
+                    <li>
+                        <a href="http://">
+                            React Datagrid
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://">
+                            Lazy Loading in Angular
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://">
+                            React Universal
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <footer class="row horizontal-center">
-        <section class="col-10">
+        <section class="col-10 col-sm-12">
             <div class="row horizontal-center">
-                <div class="col-8">
+                <div class="col-8 col-sm-12">
                     <ul class="row">
-                        <li class="col-4 footer-list">
+                        <li class="col-4 col-sm-12 footer-list">
                             <p class="title">
                                 Reach Me At
                             </p>
@@ -114,7 +194,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="col-4 footer-list">
+                        <li class="col-4 col-sm-12 footer-list">
                             <p class="title">
                                 Published Articles
                             </p>
@@ -148,7 +228,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="col-4 footer-list">
+                        <li class="col-4 col-sm-12 footer-list">
                             <p class="footer-item">
                                 &copy; 2018 Subzworld All rights reserved.
                             </p>
@@ -159,6 +239,7 @@
         </section>
     </footer>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/animation.js"></script>
 </body>
 
 </html>
