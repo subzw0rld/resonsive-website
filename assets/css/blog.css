@@ -1,0 +1,14 @@
+.blog .hero {
+  height: auto;
+}
+.blog .card {
+  padding: 5rem;
+}
+.blog .container {
+  height: 80vh;
+}
+.blog .content {
+  padding-top: 80px;
+}
+
+/*# sourceMappingURL=blog.css.map */

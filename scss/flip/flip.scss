@@ -1,0 +1,118 @@
+.flip-setup {
+    // align-self: center;
+    // padding: 2.5rem;
+    perspective: 400px;
+    // position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
+    // width: 100%;
+}
+.flip {
+    .flip-back::before {
+        animation: flipTop 0.6s cubic-bezier(.37, .01, .94, .35);
+        animation-fill-mode: both;
+        transform-origin: center bottom;
+    }
+    .flip-back {
+        .flip-bottom {
+            transform-origin: center top;
+            animation-fill-mode: both;
+            animation: flipBottom 0.9s cubic-bezier(.15, .45, .28, 1);
+        }
+    }
+}
+
+.flip-card {
+    font-family: 'Coda Caption', sans-serif;
+    font-size: 5vw;
+    line-height: 0.95;
+    padding-bottom: 0.72rem;
+    position: relative;
+}
+
+.flip-top,
+.flip-bottom,
+.flip-back {
+    font-size: inherit;
+}
+
+.flip-top,
+.flip-bottom,
+.flip-back::before,
+.flip-back::after {
+    display: block;
+    height: 50%;
+    color: #FFF;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+    width: 100%;
+}
+
+.flip-back::before,
+.flip-back::after {
+    color: rgba(57, 57, 57, 0.3);
+}
+
+.flip-bottom {
+    border-top: 1px solid rgba(34, 34, 34, 0.1);
+    color: #393939;
+    position: absolute;
+    top: 48%;
+    left: 0;
+    overflow: hidden;
+    &::after {
+        display: block;
+        margin-top: -42%;
+    }
+}
+
+.flip-back::before,
+.flip-bottom::after {
+    content: attr(data-value);
+}
+
+.flip-back {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &::before {
+        position: relative;
+        overflow: hidden;
+        z-index: -1;
+    }
+}
+
+@keyframes flipTop {
+    0% {
+      transform: rotateX(0deg);
+      z-index: 2;
+    }
+    0%, 99% {
+      opacity: 0.99;
+    }
+    100% {
+      transform: rotateX(-90deg);
+      opacity: 0;
+    }
+  }
+
+@keyframes flipBottom {
+    0%,
+    50% {
+        z-index: -1;
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+    51% {
+        opacity: 0.99;
+    }
+    100% {
+        opacity: 0.99;
+        transform: rotateX(0deg);
+        z-index: 5;
+    }
+}

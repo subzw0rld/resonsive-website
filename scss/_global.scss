@@ -17,6 +17,7 @@ body {
 }
 
 a {
+    color: inherit;
     text-decoration: none;
 }
 
@@ -25,8 +26,18 @@ canvas {
     position: absolute;
 }
 
+// footer {
+//     margin-top: 2rem;
+// }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Coda Caption', sans-serif;
+    line-height: 1;
 }
 
 h1 {
@@ -38,6 +49,7 @@ h1 {
 
 section, div, p, span, input, footer {
     font-size: 1.2rem;
+    line-height: 1;
     @media screen and (min-width: 768px) {
         font-size: 1.4rem;
     }
@@ -78,15 +90,33 @@ ul {
     }
 }
 
+.card {
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    max-width: $desktop-width;
+    width: 100%;
+}
+
 .hero {
-    background: url('../images/emptiness.jpg') no-repeat;
-    background-size: cover;
-    background-position: center; 
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
     height: 100vh;
 }
 
@@ -152,4 +182,12 @@ ul {
 .blog.navigation {
     position: relative;
     background-color: #000;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+
+.important-note {
+    font-size: 1.1rem;
 }

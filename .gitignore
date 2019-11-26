@@ -1,2 +1,5 @@
 # dependencies
 /node_modules
+/techBlog/blogService/node_modules
+
+/.sass-cache

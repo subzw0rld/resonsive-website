@@ -1,0 +1,18 @@
+.blog-container {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: relative;
+}
+
+.blog-container-header {
+    /* background-color: #f2f2f2; */
+    padding: 1rem 3rem;
+}
+
+.blog-container-header span {
+    color: #0AB1FF;
+    cursor: pointer;
+    font-weight: 600;
+}

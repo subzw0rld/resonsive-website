@@ -1,0 +1,61 @@
+@import '../variables';
+@import '../flip/flip';
+@import '../swiper/swiper';
+
+$about-hero-height: 100vh;
+
+.about {
+    .hero {
+        background: url(../images/IMG_7531.jpg) no-repeat;
+        background-color: #222;
+        background-size: 50% 100% !important;
+        background-position-x: right !important;
+    }
+
+    .profile {
+        height: $about-hero-height;
+        padding-top: $nav-height;
+    }
+
+    .profile-message {
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        justify-content: center;
+        color: #FFFFFF;
+        padding-left: 2rem;
+
+        .title {
+            flex: 0 0 100%;
+        }
+    }
+
+    .about-me-desc {
+        padding: 0 10vw;
+    }
+
+    .who-am-i {
+        color: #FFF;
+        font-size: 9vw;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    .list {
+        li {
+            padding: 1rem 0;
+        }
+    }
+
+    .swiper-container {
+        width: 200px;
+    }
+
+    .swiper-item {
+        cursor: default;
+        flex: 0 0 200px;
+        font-size: 2rem;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+}

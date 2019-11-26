@@ -1,0 +1,95 @@
+{
+  "blog-list": [
+    {
+      "category": "misc",
+      "component": "BlogContent",
+      "content": "<div>This is the content for Think Simple section</div>",
+      "label": "Think Simple and Make it Big",
+      "path": "/think-simple-make-it-big"
+    },
+    {
+      "category": "misc",
+      "component": "BlogContent",
+      "content": "<div>This is the content for Data Viz section</div>",
+      "label": "HARNESS THE POWER OF UI FOR DATA VISUALIZATION",
+      "path": "/harness-power-ui-data-viz"
+    },
+    {
+      "category": "angular",
+      "component": "BlogContent",
+      "content": "<div>Content for Angular Datagrid</div>",
+      "label": "Angular 7 Datagrid",
+      "path": "/ng7-datagrid"
+    },
+    {
+      "category": "angular",
+      "component": "BlogContent",
+      "content": "<div>Content for DataCaching</div>",
+      "label": "Data Caching in Angular",
+      "path": "/angular-data-caching"
+    },
+    {
+      "category": "angular",
+      "component": "BlogContent",
+      "content": "<div>Content for Angular Universal</div>",
+      "label": "Angular Universal",
+      "path": "/angular-universal"
+    },
+    {
+      "category": "angular",
+      "component": "BlogContent",
+      "content": "<div>Content for Angular Best Practices</div>",
+      "label": "Angular Best Practices - Lessons Learned",
+      "path": "/angular-best-practices"
+    },
+    {
+      "category": "react",
+      "component": "BlogContent",
+      "content": "<div>Content for React Datagrid</div>",
+      "label": "React Datagrid",
+      "path": "/react-datagrid"
+    },
+    {
+      "category": "react",
+      "component": "BlogContent",
+      "content": "<div>Lazy loading in React</div>",
+      "label": "React Lazy Loading",
+      "path": "/react-lazyloading"
+    },
+    {
+      "category": "react",
+      "component": "BlogContent",
+      "content": "<div>Content for React Universal",
+      "label": "React Universal using Next.js",
+      "path": "/react-universal"
+    },
+    {
+      "category": "viz",
+      "component": "BlogContent",
+      "content": "<div>Content for Particle System",
+      "label": "Simulating a Particle System using HTML 5 Canvas",
+      "path": "/particle-system"
+    },
+    {
+      "category": "viz",
+      "component": "BlogContent",
+      "content": "<div>Content for Collision Detection",
+      "label": "Collision Detection using HTML 5 Canvas",
+      "path": "/collision-detection"
+    },
+    {
+      "category": "viz",
+      "component": "BlogContent",
+      "content": "<div>Content for Testing Gravity",
+      "label": "Simulating Gravity using HTML 5 Canvas",
+      "path": "/gravity"
+    },
+    {
+      "category": "viz",
+      "component": "BlogContent",
+      "content": "<div>Content for 3D in CSS",
+      "label": "Using 3D Capabilities of CSS to create real world components",
+      "path": "/css-3d"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACI,WAAM;EACF,UAAU,EAAE,wCAAwC",
+"sources": ["../../scss/pages/home.scss"],
+"names": [],
+"file": "home.css"
+}

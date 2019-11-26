@@ -1,0 +1,30 @@
+.page-navigator {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    padding: 0.3rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transition: bottom 500ms ease-in-out;
+}
+
+.page-navigator.hide {
+    bottom: -100px;
+}
+
+.link-btn {
+    font-size: 3rem;
+    color: #393939;
+    margin: 1rem;
+}
+
+button.link-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.link-btn>i:hover {
+    text-shadow: 0 1px 3px #393939;
+}

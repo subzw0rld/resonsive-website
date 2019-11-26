@@ -1,0 +1,32 @@
+
+.blog-content-wrapper {
+  border: 1px solid #CCC;
+  flex: 0 0 80%;
+  margin: -10rem auto 0 auto;
+  min-height: 100vh;
+}
+
+.fade-enter {
+  opacity: 1;
+}
+.fade-enter.fade-enter-active{
+  opacity: 0;
+  transition: opacity 2000ms ease-in;
+}
+
+.fade-exit {
+  opacity: 0;
+}
+.fade-exit.fade-exit-active{
+  opacity: 1;
+  transition: opacity 2000ms ease-in;
+}
+
+.transition-group {
+  position: relative;
+}
+
+.loading-message {
+  flex: 0 0 100%;
+  text-align: center;
+}

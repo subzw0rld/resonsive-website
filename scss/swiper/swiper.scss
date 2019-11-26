@@ -1,0 +1,15 @@
+.swiper-container {
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+    overflow: hidden;
+    transition-property: transform, -webkit-transform;
+    transition-timing-function: ease-in;
+}
+
+
+.swiper-item {
+    flex: 0 0 100%;
+}
