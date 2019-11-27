@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
 }
 .contact .hero {
   background: url(../../assets/images/3_blur.jpg);

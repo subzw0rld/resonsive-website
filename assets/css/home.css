@@ -1,5 +1,6 @@
-.home .hero {
-  background: url("../images/emptiness.jpg") no-repeat;
+.home .lighting-effect {
+  height: 100vh;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=home.css.map */

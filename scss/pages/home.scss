@@ -1,5 +1,11 @@
 .home {
     .hero {
-        background: url('../images/emptiness.jpg') no-repeat;
+        // background: url('../images/emptiness.jpg') no-repeat;
     }
+
+    .lighting-effect {
+        height: 100vh;
+        overflow: hidden;
+    }
+
 }
